@@ -48,4 +48,4 @@ Built using **HTML, CSS, and JavaScript**.
 
 You can deploy it easily on:
 
-* [GitHub Pages](https://pages.github.com/)
+* [GitHub Pages](https://nitindaswani.github.io/Password-Generator/)
