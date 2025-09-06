@@ -1,0 +1,126 @@
+body {
+  background-color: #bcd8c1;
+  color: #241623;
+}
+
+.title {
+  font-size: 50px;
+  text-align: center;
+  margin: 30px 0px 80px;
+}
+
+#form {
+  background-color: #f5f5dc;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 22%;
+  margin: auto;
+  padding: 20px;
+  border: 2px solid #241623;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+.num-char {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.uc {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.lc {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.sc {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.num {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+#generate {
+  width: 55%;
+  margin: auto;
+  padding: 8px;
+  font-size: 18px;
+  background-color: cadetblue;
+  color: beige;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.result {
+  background-color: beige;
+  width: 22%;
+  margin: 40px auto;
+  padding: 20px;
+  border: 2px solid #241623;
+  border-radius: 10px;
+  text-align: center;
+
+  display: none;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  text-align: start;
+}
+
+#copy {
+  grid-column: span 2;
+  width: 50%;
+  margin: auto;
+  padding: 5px;
+  font-size: 17px;
+  background-color: cadetblue;
+  color: beige;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#password {
+  color: #241623;
+  font-size: 18.72px;
+  font-weight: bold;
+  border: none;
+  background-color: beige;
+  resize: none;
+  width: auto;
+  height: auto;
+}
+
+#popup {
+  visibility: hidden;
+  min-width: 150px;
+  background: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+#popup.show {
+  visibility: visible;
+  opacity: 1;
+}
