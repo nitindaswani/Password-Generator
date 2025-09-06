@@ -1,51 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Password Generator</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <h1 class="title">Random Password Generator</h1>
     <form id="form">
-        
-        <div class="num-char">
-            <label for="char">Enter the number of characters : </label>
-            <input id="char" type="number" name="length" max="24" min="8" required>
-        </div>
-        
-        <div class="uc">
-            <input type="checkbox" name="uppercase" id="uc" checked>
-            <label for="uc">Uppercase</label>
-        </div>
-        
-        <div class="lc">
-            <input type="checkbox" name="lowercase" id="lc" checked>
-            <label for="lc">Lowercase</label>
-        </div>
+      <div class="num-char">
+        <label for="char">Enter the number of characters : </label>
+        <input
+          id="char"
+          type="number"
+          name="length"
+          max="24"
+          min="8"
+          required
+        />
+      </div>
 
-        <div class="sc">
-            <input type="checkbox" name="specialchar" id="sc" checked>
-            <label for="sc">Special Characters</label>
-        </div>
-        
-        <div class="num">
-            <input type="checkbox" name="numbers" id="num" checked>
-            <label for="num">Numbers</label>
-        </div>
+      <div class="uc">
+        <input type="checkbox" name="uppercase" id="uc" checked />
+        <label for="uc">Uppercase</label>
+      </div>
 
-        <button id="generate">Generate Password</button>
+      <div class="lc">
+        <input type="checkbox" name="lowercase" id="lc" checked />
+        <label for="lc">Lowercase</label>
+      </div>
+
+      <div class="sc">
+        <input type="checkbox" name="specialchar" id="sc" checked />
+        <label for="sc">Special Characters</label>
+      </div>
+
+      <div class="num">
+        <input type="checkbox" name="numbers" id="num" checked />
+        <label for="num">Numbers</label>
+      </div>
+
+      <button id="generate">Generate Password</button>
     </form>
 
-
-    <div class="result" >
-        <h3>Your Password is :</h3>
-        <textarea name="password" readonly="readonly" id="password"></textarea>
-        <button id="copy" >Copy to Clipboard</button>
+    <div class="result">
+      <h3>Your Password is :</h3>
+      <textarea name="password" readonly="readonly" id="password"></textarea>
+      <button id="copy">Copy to Clipboard</button>
     </div>
 
     <div id="popup">✅ Text Copied!</div>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
